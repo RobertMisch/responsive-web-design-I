@@ -1,3 +1,416 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border:1px solid grey ;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* page 1 sql */
+body{
+	margin:5%;
+}
+br .mobilebr{
+	display:none;
+}
+/*nav bar work*/
+header{
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 2%;
+}
+.navcontainer{
+	display:flex;
+	flex-direction: row;
+	width:90%;
+}
+
+nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+nav a{
+	text-align: center;
+	font-size: large;
+	color: gray;
+	text-decoration: none;
+}
+nav a:hover{
+	color:black;
+}
+/* splash section */
+.splash-container{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.splash1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	font-size: 100px;
+	text-align: center;
+}
+
+/* .main-splash-img{
+	display:inline-block;
+
+} */
+/* .firstimage{
+	width: 100%;
+} */
+button{
+	text-align: center;
+	font-size: large;
+	background-color: white;
+	border-color: gray;
+	border-width: 2px;
+	width: 30%;
+}
+/* features box */
+	hr{ width:100%; height:4px; background:red }
+
+	.textgrid{
+		display:flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+		.firstblock{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 2%;
+		}
+			.Features{
+				width: 30%;
+			}
+			.About{
+				width: 30%;
+			}
+
+		.middle-img{
+			width:100%;
+		}
+
+		.secondblock{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 2%;
+		}
+			.Services{
+				width: 20%;
+			}
+			.Product{
+				width: 20%;
+			}
+			.Vision{
+				width: 20%;
+			}
+
+/* end of page 1 */
+address{
+	width:15%;
+	margin: 5% 0;
+}
+
+address p{
+	line-height: 2;
+}
+
+footer{
+	text-align: center;
+}
+small{
+	color:gray;
+}
+
+/* Services page */
+
+
+/* header after nav */
+.introbox{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+hr{
+	margin:2% 0;
+}
+.services-header-img{
+width: 100%;
+}
+.serviceHeader{
+	font-size: 30px;
+	text-align: left;
+}
+.header-text{
+	font-weight: bold;
+	line-height: 2;
+}
+/* 2x3 grid of boxes */
+.panelcontainer{
+	display:flex;	
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.infopanel{
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+	margin: 2%;
+	width:46%;
+	background-color: grey;
+	border: 2px solid darkgrey;
+}
+.infopanel h2{
+	font-size: large;
+}
+.infopanel button{
+	margin:3% 0;
+	background-color: lightgray;
+	color: black;
+}
+.infopanel p{
+	font-weight: bold;
+	line-height: 2;
+}
+/* .buttonedit{
+	margin:3% 0;
+	background-color: lightgray;
+	color: black;
+} */
+
+/* footer work */
+.lastSectionContainer{
+	display: flex;
+	justify-content: space-around;
+}
+.lastSectionElement{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 46%;
+}
+.lastSectionElement h2{
+	font-size: x-large;
+}
+.lastSectionElement p{
+	display: block;
+	font-size: large;
+	font-weight: bold;
+	line-height: 2;
+}
+.lastSectionElement ul{
+	list-style-type: square;
+	margin-left: 3%;	
+	line-height: 3;
+}
+
+.lastSectionElement img{
+	width: 100%;
+	align-content: center;
+}
+
+/*Vision page*/
+
+.infopanel2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2%;
+	margin: 2%;
+	width:28%;
+	background-color: grey;
+	border: 2px solid darkgrey;
+}
+
+/* media break point section */
+
+/* tablet view */
+@media(max-width: 800px)
+{
+	header{
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		
+	}
+	.logocontainer{
+		display: flex;
+		justify-content: center;
+	}
+	.navcontainer{
+		width:100%;
+	}
+	.splashimg{
+		display: none;
+	}
+	h1{
+		font-size: 70px;
+	}
+	.splash-container{
+		margin: 2%;
+	}
+	button{
+		width: 45%;
+	}
+
+	.firstblock{
+		display: flex;
+		justify-content: space-evenly;
+		margin: 2%;
+	}
+		.Features{
+			width: 48%;
+		}
+		.About{
+			width: 48%;
+		}
+
+	.secondblock{
+		display: flex;
+		justify-content: space-evenly;
+		margin: 2%;
+	}
+		.Services{
+			width: 30%;
+		}
+		.Product{
+			width: 30%;
+		}
+		.Vision{
+			width: 30%;
+		}
+
+		address{
+			width:25%;
+			margin: 5% 0;
+		}
+		
+		address p{
+			line-height: 1;
+			margin: 5% 0;
+		}
+
+}
+
+@media(max-width: 500px){
+	br .mobilebr{
+		display: block;
+	}
+	
+	nav{
+		flex-direction: column;
+		align-items: center;
+	}
+	nav a{
+		font-size: larger;
+	}
+
+	.firstblock{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin: 2% 0;
+	}
+		.Features{
+			width: 100%;
+			margin: 3% 0;
+		}
+		.About{
+			width: 100%;
+			margin: 3% 0;
+		}
+
+	.secondblock{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin: 3% 0;
+	}
+		.Services{
+			width: 100%;
+			margin: 3% 0;
+		}
+		.Product{
+			width: 100%;
+			margin: 3% 0;
+		}
+		.Vision{
+			width: 100%;
+			margin: 3% 0;
+		}
+
+		address{
+			width:50%;
+			margin: 5% 0;
+		}
+		
+		address p{
+			line-height: 1;
+			margin: 5% 0;
+		}
+
+  }
